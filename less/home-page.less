@@ -11,6 +11,12 @@
     p {
       padding:0 15px;
     }
+
+    .main-header{
+      @media (max-width: 500px){
+        width:100%;
+      }
+    }
   
   }
 
@@ -24,8 +30,18 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    
+      @media (max-width: 500px){
+          width: 100%;
+          }
+        }
+
+        .sky, .launch{
+          @media (max-width: 500px){
+            display: none;
+          }
+        }
     }
-  }
 
   .visit-planets {
     padding: 15px;
