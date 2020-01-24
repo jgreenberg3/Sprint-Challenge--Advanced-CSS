@@ -92,22 +92,22 @@
           padding:4%;
           width:50%;
 
-          @media @phone{
-            .cell();
-            padding:4% 0;
-          }
-
           // Inserting simple animation here
 
-          @keyframes example {
+          @keyframes buttonAnimation {
             from {background-color: white;}
             to {background-color: #282828;}
           }
 
-          animation-name: example;
+          animation-name: buttonAnimation;
           animation-duration: 10s;
-          
+
           // Ending animation
+
+          @media @phone{
+            .cell();
+            padding:4% 0;
+          }
 
           &:hover{
             background: darkblue;
