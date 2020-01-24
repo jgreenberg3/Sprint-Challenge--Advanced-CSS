@@ -160,6 +160,12 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.cell {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
 .home .intro h2 {
   padding: 15px;
 }

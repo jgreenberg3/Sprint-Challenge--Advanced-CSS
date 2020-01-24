@@ -1,5 +1,17 @@
 // Home Content
 
+// 2 Mixins Created Here: cell & flex
+
+.cell{
+  width: 100%;
+}
+
+.flex{
+  display: flex;
+}
+
+// 
+
 .home {
 
   .intro {
@@ -14,14 +26,14 @@
 
     .main-header{
       @media @phone {
-        width:100%;
+        .cell();
       }
     }
   
   }
 
   .space-images {
-    display: flex;
+    .flex();
     flex-wrap: wrap;
     width: 100%;
 
@@ -32,7 +44,7 @@
       height: 100%;
     
       @media @phone {
-          width: 100%;
+          .cell();
           }
         }
 
@@ -59,7 +71,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
+    .flex();
     justify-content: center;
 
     @media @phone {
@@ -72,7 +84,7 @@
       width: 50%;
 
       @media @phone {
-        width: 100%;
+        .cell();
         margin: 3% 0 1% 0;
       }
 
