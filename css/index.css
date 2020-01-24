@@ -244,21 +244,27 @@ p {
   border-radius: 5px;
   font-size: 1.6rem;
   padding: 4%;
-  width: 100%;
+  width: 50%;
   animation-name: example;
   animation-duration: 10s;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 4% 0;
+  }
+}
 @keyframes example {
   from {
-    background-color: #282828;
+    background-color: white;
   }
   to {
-    background-color: white;
+    background-color: #282828;
   }
 }
 .home .walk .walk-text .btn:hover {
-  background: red;
-  color: darkblue;
+  background: darkblue;
+  color: red;
 }
 .home .walk .walk-img {
   width: 46%;
