@@ -1,3 +1,9 @@
+.cell {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,12 +166,6 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.cell {
-  width: 100%;
-}
-.flex {
-  display: flex;
-}
 .home .intro h2 {
   padding: 15px;
 }
@@ -245,6 +245,20 @@ p {
   font-size: 1.6rem;
   padding: 4%;
   width: 100%;
+  animation-name: example;
+  animation-duration: 10s;
+}
+@keyframes example {
+  from {
+    background-color: #282828;
+  }
+  to {
+    background-color: white;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  background: red;
+  color: darkblue;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -269,6 +283,16 @@ nav {
   max-width: 950px;
   width: 100%;
   margin: 0 auto;
+  animation-name: example;
+  animation-duration: 10s;
+}
+@keyframes example {
+  from {
+    background-color: #000000;
+  }
+  to {
+    background-color: #E8E8E8;
+  }
 }
 nav h1 {
   width: 100%;

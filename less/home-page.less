@@ -1,17 +1,5 @@
 // Home Content
 
-// 2 Mixins Created Here: cell & flex
-
-.cell{
-  width: 100%;
-}
-
-.flex{
-  display: flex;
-}
-
-// 
-
 .home {
 
   .intro {
@@ -96,14 +84,30 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-          background: #282828;
-          color: white;
+      .btn{
+          .newButton(#282828, white);
           text-align: center;
           border-radius: 5px;
           font-size: 1.6rem;
           padding:4%;
           width:100%;
+
+          // Inserting simple animation here
+
+          @keyframes example {
+            from {background-color: #282828;}
+            to {background-color: white;}
+          }
+
+          animation-name: example;
+          animation-duration: 10s;
+          
+          // Ending animation
+
+          &:hover{
+            background: red;
+            color: darkblue;
+          }
       }
     }
 
