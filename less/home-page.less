@@ -4,21 +4,26 @@
 
   .intro {
 
-    h2 {
-      padding: 15px;
-    }
+    .flex();
+    flex-wrap: wrap;
+    width: 100%;
+    max-width:100%;
 
-    p {
-      padding:0 15px;
-    }
-
-    .main-header{
-      @media @phone {
-        .cell();
+      h2 {
+        padding: 15px;
       }
-    }
-  
+
+      p {
+       padding:0 15px;
+      }
   }
+
+  .main-header{
+    max-width:100%;
+    width: 100%;
+   }
+
+
 
   .space-images {
     .flex();

@@ -166,16 +166,21 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.home .intro {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
 }
-@media (max-width: 500px) {
-  .home .intro .main-header {
-    width: 100%;
-  }
+.home .main-header {
+  max-width: 100%;
+  width: 100%;
 }
 .home .space-images {
   display: flex;
@@ -245,21 +250,21 @@ p {
   font-size: 1.6rem;
   padding: 4%;
   width: 50%;
-  animation-name: example;
+  animation-name: buttonAnimation;
   animation-duration: 10s;
 }
-@media (max-width: 500px) {
-  .home .walk .walk-text .btn {
-    width: 100%;
-    padding: 4% 0;
-  }
-}
-@keyframes example {
+@keyframes buttonAnimation {
   from {
     background-color: white;
   }
   to {
     background-color: #282828;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 4% 0;
   }
 }
 .home .walk .walk-text .btn:hover {
@@ -289,15 +294,20 @@ nav {
   max-width: 950px;
   width: 100%;
   margin: 0 auto;
-  animation-name: example;
+  animation-name: headerAnim;
   animation-duration: 10s;
 }
-@keyframes example {
+@keyframes headerAnim {
   from {
     background-color: #000000;
   }
   to {
     background-color: #E8E8E8;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
   }
 }
 nav h1 {
